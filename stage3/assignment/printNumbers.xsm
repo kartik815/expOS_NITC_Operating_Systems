@@ -1,0 +1,12 @@
+MOV R0, 1        
+MOV R1, 20       
+AGAIN:
+MOV R16, R0
+PORT P1, R16
+OUT
+INR R0
+DCR R1
+JNZ R1, AGAIN
+
+HALT
+
